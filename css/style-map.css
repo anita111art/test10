@@ -1,0 +1,112 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+html, body, #map {
+    width: 100%; 
+    height: 100%; 
+    padding: 0; 
+    margin: 0;
+}
+main {
+    width: 60%; 
+    height: 60%;
+    margin-bottom: 3rem;
+}
+header, ul {
+    display: flex;
+}
+header {
+    justify-content: space-between;
+    position: fixed;  
+    top: 0;  
+    left: 0;  
+    right: 0; 
+    background: white;
+    z-index: 1;
+}
+header img {
+    margin: 0 2rem;
+    width: 5rem;
+}
+li {
+    list-style: none;
+}
+ul {
+    background: #2F4836;
+    border-radius: 1rem 0rem 0rem 5rem;
+}
+header a {
+    background: #2F4836;
+    color: white;
+    padding: 1rem 2.5rem;
+    display: block;
+    width: auto;
+    height: auto;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-align: center;
+    font-size: 2rem;
+    border-radius: 1rem 5rem;
+}
+.activ{
+    border: 1px solid azure;
+}
+header a:hover, header a:active {
+    background: #475D4E;
+}
+header a {
+    letter-spacing: 0.2rem;
+}
+main {
+    margin-top: 5rem;
+    z-index: -1;
+}
+footer {
+    background: #2F4836;
+    color: white;
+    padding: 0.5rem 2rem;
+    margin-top: auto;
+    position:relative; 
+    letter-spacing: 0.1rem;
+}
+footer p{
+    padding: 1rem 0;
+    font-size: 1rem;
+}
+.foot {
+    margin-bottom: 0.5rem;
+}
+footer div {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    opacity: 0.7;
+}
+footer div p {
+    padding-bottom: 0px;
+}
+footer svg{
+    width: 3rem;
+    opacity: 0.7;
+    fill: #ffffff;
+}
+footer svg path{ 
+    fill: #2F4836;
+}
+footer svg:active, footer svg:hover{
+    opacity: 1;
+    fill: #5281b8;
+}
+footer svg:active path, footer svg:hover path{ 
+    fill: #ffffff;
+}
+
+@media ((hover: none) and (orientation: portrait) and (min-device-width: 200px) and (max-device-width: 800px)) or (max-width: 550px) {
+    main {
+        width: 100%; 
+        height: 60%;
+        margin-bottom: 3rem;
+}
+}
